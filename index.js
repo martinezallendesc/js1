@@ -28,6 +28,9 @@ function incrementar() {
 }
 
 function disminuir() {
+    if (cantidad == 0) {
+        return cantidad
+    }
     cantidadSpan.innerHTML = cantidad--
 totalfinal()
 }
