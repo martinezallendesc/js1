@@ -1,22 +1,21 @@
 
-
 /*Desarrollo Ejercicio*/
 
-const precio = 400000
-let  cantidad = 0
+const precio = 400000;
+let  cantidad = 0;
 
 
 /*Casilla Precio*/
-precioSpan = document.querySelector(".precio-inicial")
-precioSpan.innerHTML = precio
+precioSpan = document.querySelector(".precio-inicial");
+precioSpan.innerHTML = precio;
 
 /*Casilla Cantidad*/
-cantidadSpan = document.querySelector(".cantidad")
-cantidadSpan.innerHTML = cantidad
+cantidadSpan = document.querySelector(".cantidad");
+cantidadSpan.innerHTML = cantidad;
 
 /*Casilla total a pagar*/
-totalSpan = document.querySelector(".valor-total")
-totalSpan.innerHTML = precio * cantidad
+totalSpan = document.querySelector(".valor-total");
+totalSpan.innerHTML = precio * cantidad;
 
 
 /*Botones*/
@@ -27,6 +26,7 @@ function incrementar() {
 
 }
 
+//Solución para que no pase el número a negativo
 function disminuir() {
     if (cantidad == 0) {
         return cantidad
@@ -38,12 +38,5 @@ totalfinal()
 /*Actualizar total*/
 function totalfinal() {
     totalSpan.innerHTML = cantidad * precio
-
 }
-
-
-
-
-
-
 
